@@ -1,0 +1,520 @@
+/* UserProfile.css */
+
+/* Page Layout */
+.profile-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Profile Header */
+.profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    margin-right: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info h1 {
+    margin: 0 0 5px 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.profile-email {
+    color: #666;
+    margin: 0 0 5px 0;
+}
+
+.profile-member-since {
+    color: #888;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Tabs Navigation */
+.profile-tabs {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+    color: #333;
+}
+
+.tab-btn.active {
+    color: #2e7d32;
+    border-bottom-color: #2e7d32;
+}
+
+/* Tab Content */
+.profile-content {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 30px;
+    min-height: 400px;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.tab-header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Profile Form */
+.profile-form {
+    max-width: 800px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.form-section h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-control:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+.help-text {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.form-check-input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Profile Details */
+.profile-details {
+    max-width: 800px;
+}
+
+.details-section {
+    margin-bottom: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.details-section h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.details-item {
+    margin-bottom: 10px;
+}
+
+.details-label {
+    display: block;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.details-value {
+    color: #333;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #226025;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.btn-outline:hover {
+    background-color: #f5f5f5;
+}
+
+.edit-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Orders Tab */
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+
+.order-id h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.order-status {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.order-status.completed {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.order-status.pending {
+    background-color: #fff8e1;
+    color: #ffa000;
+}
+
+.order-status.cancelled {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.order-date {
+    color: #777;
+    font-size: 14px;
+}
+
+.order-items {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.order-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.order-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #fafafa;
+}
+
+.order-seller {
+    color: #555;
+}
+
+.order-total {
+    font-weight: 500;
+}
+
+.order-total span {
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.no-orders {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.no-orders p {
+    margin-bottom: 20px;
+    color: #777;
+}
+
+/* Loading and Error States */
+.loading-container, .error-container {
+    text-align: center;
+    padding: 40px 0;
+    color: #777;
+}
+
+.error-container {
+    color: #c62828;
+}
+
+/* Password Reset Section */
+.reset-password-form {
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.form-error {
+    color: #dc3545;
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: rgba(220, 53, 69, 0.1);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-success {
+    color: #28a745;
+    margin: 10px 0;
+    padding: 8px 12px;
+    background-color: rgba(40, 167, 69, 0.1);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Security sections */
+.security-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.security-section h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Danger zone styling */
+.danger-zone {
+    border: 1px solid #dc3545;
+    border-radius: 8px;
+}
+
+.danger-zone h3 {
+    color: #dc3545;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+}
+
+/* Forgot Password Styles */
+.forgot-password-link {
+    margin-top: 15px;
+    text-align: right;
+}
+
+.btn-link {
+    background: none;
+    border: none;
+    color: #2e7d32;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+}
+
+.btn-link:hover {
+    color: #226025;
+}
+
+.forgot-password-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.forgot-password-form h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.forgot-password-form p {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-avatar {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-row .form-group {
+        min-width: 100%;
+    }
+
+    .tab-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 5px;
+    }
+
+    .profile-content {
+        padding: 20px 15px;
+    }
+}
